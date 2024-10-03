@@ -5,9 +5,11 @@ puts "Il y a :#{handle.length}"
 
 small_handle = handle.min
 puts "Le plus petit handle est :#{small_handle}"
-# code pour le plus petit ok - min pour chercher le plus petit, code a noter
+# code pour le plus petit ok - min pour chercher 
+#le plus petit, code a noter
 
-count = 0 # code a noter, sert a compter le nombre de handle qui ont 5 caract.
+count = 0 # code a noter, sert a compter le nombre
+#de handle qui ont 5 caract.
 handle.each do |handle|
     if handle.delete("@").length == 5
         "#{handle} a 5 character"
@@ -15,3 +17,10 @@ handle.each do |handle|
     end
 end
 puts "Il y a:#{count} hadle a 5 caractere"
+#code a revoir
+
+handle.each do |handle|
+    if handle[1].between?('A','Z') # verifier si ok, on peut aussi mettre =~ /[A-Z]/
+      puts "#{handle} commence par une majuscule après le @"
+    end
+  end
