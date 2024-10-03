@@ -2,3 +2,7 @@ handle = ["@jcunniet", "@PaulLampon", "@Aziliz31","@ssoumier","@marionsouzeau","
 puts "Combien y a-t-il de handle dans cette array ?"
 puts "Il y a :#{handle.length}"
 # code pour nombre handle ok
+
+small_handle = handle.min
+puts "Le plus petit hadle est :#{small_handle}"
+# code pour le plus petit ok - min pour le plus petit code a noter
