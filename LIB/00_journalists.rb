@@ -24,3 +24,14 @@ handle.each do |handle|
       puts "#{handle} commence par une majuscule après le @"
     end
   end
+
+  n = handle.length
+loop do
+  swapped = false
+
+  (n-1).times do |i|
+    if handle[i] > handle[i + 1]
+      handle[i], handle[i + 1] = handle[i + 1], handle[i] # Échange des positions
+      swapped = true
+    end
+  end
